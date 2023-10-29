@@ -1,13 +1,13 @@
-package com.example;
+package fr.robinmerde;
 
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
-@Mod(modid = "examplemod", useMetadata=true)
-public class ExampleMod {
+@Mod(modid = "sanglier", useMetadata=true)
+public class Sanglier {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        System.out.println("Dirt: " + Blocks.dirt.getUnlocalizedName());
+        
     }
 }

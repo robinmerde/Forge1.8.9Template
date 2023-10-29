@@ -1,11 +1,11 @@
 {
-  "package": "${mixinGroup}",
+  "package": "fr.robinmerde.mixin",
   "refmap": "mixins.${modid}.refmap.json",
   "minVersion": "0.7",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [
-	"MixinGuiMainMenu"
+    "MixinGuiMainMenu"
   ]
 }

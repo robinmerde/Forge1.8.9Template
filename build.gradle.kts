@@ -10,11 +10,11 @@ plugins {
 
 //Constants:
 
-val baseGroup: String by project
-val mcVersion: String by project
-val version: String by project
+val baseGroup = "fr.robinmerde"
+val mcVersion = "1.8.9"
+val version = "1.0.0"
 val mixinGroup = "$baseGroup.mixin"
-val modid: String by project
+val modid = "sanglier"
 
 // Toolchains:
 java {
@@ -63,16 +63,19 @@ repositories {
     maven("https://repo.spongepowered.org/maven/")
     // If you don't want to log in with your real minecraft account, remove this line
     maven("https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
+    maven("https://repo.essential.gg/repository/maven-public")
 }
 
 val shadowImpl: Configuration by configurations.creating {
     configurations.implementation.get().extendsFrom(this)
 }
 
+
 dependencies {
     minecraft("com.mojang:minecraft:1.8.9")
     mappings("de.oceanlabs.mcp:mcp_stable:22-1.8.9")
     forge("net.minecraftforge:forge:1.8.9-11.15.1.2318-1.8.9")
+    implementation("gg.essential:elementa-1.8.9-forge:614")
 
     // If you don't want mixins, remove these lines
     shadowImpl("org.spongepowered:mixin:0.7.11-SNAPSHOT") {

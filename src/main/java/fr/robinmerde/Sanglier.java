@@ -8,6 +8,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 public class Sanglier {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        
+
     }
 }
